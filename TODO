@@ -1,0 +1,33 @@
+This is a TODO file for both the client and server sides of the tale:
+
+Client:
+- implement a database of songs in the library/temp dir
+- implement threading
+- assymetric transfer
+- benchmarking capability
+- stats transfer
+
+Server:
+- gui
+- conversion pool
+- multiple clients
+- cdparanoia ripping
+- ability to be fed files from the internet/torrent (aria2?)
+- fallback mode to set up a client using ssh 
+    - stats set using a text file polling every interval
+    - an option to run the client persistently in screen(?)
+- fed options from a config file
+
+
+
+____________________________
+
+Config file template:
+[templateName]
+address = default server address
+useSSH = 1
+dir = mediaDir
+thread_num = numberOfThreads
+
+[serverName:templateName]
+thread_num = auto
